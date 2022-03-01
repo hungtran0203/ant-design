@@ -100,6 +100,7 @@
     "test-image": "npm run dist && docker-compose run tests",
     "version": "node ./scripts/generate-version",
     "install-react-16": "npm i --no-save --legacy-peer-deps react@16 react-dom@16 react-test-renderer@16 enzyme-adapter-react-16",
+    "nuke": "find . -name 'node_modules' -type d -prune -print -exec rm -rf '{}' \\;",
     "argos": "argos upload imageSnapshots"
   },
   "browserslist": [
